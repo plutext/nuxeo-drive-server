@@ -116,7 +116,7 @@ public class NuxeoDriveActions extends InputController implements Serializable {
     @In(create = true)
     protected transient DocumentActions documentActions;
 
-    @Factory(value = CURRENT_SYNCHRONIZATION_ROOT, scope = ScopeType.EVENT)
+    @Factory(value = CURRENT_SYNCHRONIZATION_ROOT)
     public DocumentModel getCurrentSynchronizationRoot() throws ClientException {
         // Use the event context as request cache
         Context cache = Contexts.getEventContext();
